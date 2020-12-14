@@ -319,7 +319,7 @@ body.touch .sub-sub-menu__list.open {
 
 .skill {
     position: relative;
-    height: 5px;
+    height: 4px;
     width: 0px;
 }
 
@@ -335,4 +335,132 @@ body.touch .sub-sub-menu__list.open {
     width: 100%;
     height: 100%;
     background-color: #d8d8d8;
+}
+
+.stat {
+    position: relative;
+    padding: 95px 0 96px;
+    background-color: #10c9c3;
+}
+
+.stat-list {
+    display: flex;
+    justify-content: space-between;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.stat-list li {
+    display: flex;
+    align-items: center;
+    flex-basis: 20%;
+}
+
+.stat-list li img {
+    margin-right: 20px;
+    height: 40px;
+    width: 40px;
+}
+
+.counts-block-num {
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.counts-text {
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.grid__blocks {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.grid__block {
+    flex-basis: 25%;
+    height: 380px;
+    position: relative;
+    width: 90%;
+    max-width: 400px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.grid__block .grid__overlay {
+    background: rgba(0, 0, 0, 0.85);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    transition: all 0.4s ease-in-out 0s;
+}
+
+.grid__overlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid__overlay h2 {
+    opacity: 0;
+    transition: .4s transform .2s, .4s opacity .2s;
+    transform: translateY(10px);
+    font-weight: 500;
+}
+
+.grid__overlay p {
+    opacity: 0;
+    transition: .4s transform .3s, .4s opacity .3s;
+    transform: translateY(10px);
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 13px;
+}
+
+.grid__block:hover .grid__overlay {
+    opacity: 1;
+}
+
+.grid__block:hover .grid__overlay h2 {
+    opacity: 1;
+    transition: .4s transform .2s, .4s opacity .2s;
+    transform: translateY(0);
+}
+
+.grid__block:hover .grid__overlay p {
+    opacity: 1;
+    transition: .4s transform .3s, .4s opacity .3s;
+    transform: translateY(0);
+}
+
+.grid__overlay h2,
+.grid__overlay p {
+    color: #ffffff;
+}
+
+.grid__block img {
+    width: 100%;
+    height: 100%;
+}
+
+.grid__more-btn {
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #787878;
+    background-color: #f5f5f5;
+    transition: .1s;
+}
+
+.grid__more-btn:hover {
+    color: #000000;
 }
