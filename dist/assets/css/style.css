@@ -53,6 +53,105 @@ h6 {
     color: #10c9c3 !important;
 }
 
+/* Slider */
+.slick-slider {
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list {
+    position: relative;
+    overflow: hidden;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.slick-list:focus {
+    outline: none;
+}
+
+.slick-list.dragging {
+    cursor: pointer;
+    cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+    transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+    position: relative;
+    left: 0;
+    top: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.slick-track:before, .slick-track:after {
+    content: "";
+    display: table;
+}
+
+.slick-track:after {
+    clear: both;
+}
+
+.slick-loading .slick-track {
+    visibility: hidden;
+}
+
+.slick-slide {
+    float: left;
+    height: 100%;
+    min-height: 1px;
+    display: none;
+}
+
+[dir="rtl"] .slick-slide {
+    float: right;
+}
+
+.slick-slide img {
+    display: block;
+}
+
+.slick-slide.slick-loading img {
+    display: none;
+}
+
+.slick-slide.dragging img {
+    pointer-events: none;
+}
+
+.slick-initialized .slick-slide {
+    display: block;
+}
+
+.slick-loading .slick-slide {
+    visibility: hidden;
+}
+
+.slick-vertical .slick-slide {
+    display: block;
+    height: auto;
+    border: 1px solid transparent;
+}
+
+.slick-arrow.slick-hidden {
+    display: none;
+}
+
 .wrapper {
     height: 670px;
     background-image: url("../img/intro/intro-bg.jpg");
@@ -625,4 +724,72 @@ body.touch .sub-sub-menu__list.open {
     font-size: 16px;
     font-family: 'Nunito Sans', sans-serif;
     color: #787878;
+}
+
+.testimonials {
+    padding-bottom: 50px;
+    background-color: #10c9c3;
+}
+
+.testimonials-slider-slide {
+    position: relative;
+    height: 100%;
+    padding: 120px 400px 100px;
+    text-align: center;
+    line-height: 1.7;
+    color: #ffffff;
+}
+
+.testimonials-slider-slide p {
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+
+.testimonials .slick-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 3;
+}
+
+.testimonials .slick-dots li {
+    margin: 0 5px;
+}
+
+.testimonials .slick-dots li.slick-active button {
+    width: 13px;
+    height: 13px;
+    background-color: #ffffff;
+    box-shadow: 0 0 0 5px rgba(92, 92, 92, 0.11);
+    transition: .1s;
+}
+
+.testimonials .slick-dots button {
+    display: block;
+    width: 10px;
+    height: 10px;
+    padding: 0;
+    background: #b0e8e6;
+    border: 0;
+    border-radius: 50%;
+    color: transparent;
+    font-size: 0;
+    cursor: pointer;
+}
+
+.testimonials .slick-dots button:focus {
+    outline: none;
+}
+
+.clients {
+    padding: 60px 0;
+}
+
+.clients__logos {
+    display: flex;
+    justify-content: space-between;
 }
