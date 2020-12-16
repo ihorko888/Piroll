@@ -3244,4 +3244,14 @@ $(function () {
         speed: 700
     });
 
+    // Gallery
+    
+    $(".graphic__block-gallery").magnificPopup({
+        delegate: "a",
+        type: "image",
+        gallery: {
+          enabled: true
+        }
+    });
+
 });
