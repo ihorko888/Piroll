@@ -573,6 +573,67 @@ body.touch .sub-sub-menu__list.open {
     color: #000000;
 }
 
+.grid.grid__large {
+    height: 1619.17px;
+}
+
+.grid__blocks-large .grid__overlay {
+    z-index: 1000;
+}
+
+.grid__blocks.grid__blocks-large {
+    position: relative;
+    height: 1519.17px;
+}
+
+.grid__block.grid__block-large {
+    position: absolute;
+    max-width: 33.333333%;
+    height: 506.39px;
+}
+
+.grid__block1 {
+    left: 0;
+}
+
+.grid__block2 {
+    left: 33.333333%;
+    height: 66.66667% !important;
+}
+
+.grid__block2 img {
+    transform: scaleX(2);
+}
+
+.grid__block3 {
+    left: 66.666666%;
+}
+
+.grid__block4 {
+    left: 0;
+    top: 506.39px;
+}
+
+.grid__block5 {
+    left: 66.666666%;
+    top: 506.39px;
+}
+
+.grid__block6 {
+    top: 1012.78px;
+    left: 0;
+}
+
+.grid__block.grid__block7 {
+    max-width: 66.666666%;
+    left: 33.333333%;
+    top: 1012.78px;
+}
+
+.grid__block.grid__block7 img {
+    transform: scaleY(2);
+}
+
 .work {
     padding: 100px 0;
 }
