@@ -315,9 +315,9 @@ h6 {
 }
 
 .sub-menu__arrow.arrow {
-    border-left: 5px solid #c5c5c5;
-    border-top: 5px solid transparent;
-    border-bottom: 5px solid transparent;
+    border-left: 10px solid #c5c5c5;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
     border-right: 0;
     z-index: 10;
     right: 5px;
@@ -1198,7 +1198,7 @@ body.show-nav {
 .graphic__block-gallery {
     flex-basis: 25%;
     flex-basis: 25%;
-    min-height: 380px;
+    max-height: 380px;
 }
 
 .grid__graphic {
